@@ -20,7 +20,7 @@ function Login() {
     return (
         <div>
             <Card style={{minHeight:'90vh'}}>
-            <h2>Login</h2>
+            <h2 style={{marginTop:'30px'}}>Login</h2>
             <Card.Body style={{ width: '28rem',alignSelf:'center' }}>
             <Form style={{padding:'25px',backgroundColor:'#F8F9FA',borderRadius:'5px',marginTop:'5vh'}} onSubmit={loginUser}>
                 <Form.Group controlId="formBasicEmail" >

@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav'
 import {Link} from 'react-router-dom'
 import {auth} from '../firebase'
 
-
 function NavigationBar() {
     const [data,setUser]=React.useState('');
     React.useEffect(() => {
@@ -18,9 +17,9 @@ function NavigationBar() {
     }})
     }, [])
     const logoutUser=()=>{
-        console.log("loggedout")
         setUser(null);
         auth.signOut();
+        alert('Logged out successfully')
     }
     const signIn=
                 <Navbar bg="light" variant="light" style={{justifyContent:'space-between'}}>
