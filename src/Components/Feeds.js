@@ -37,7 +37,7 @@ function Feeds() {
                 <Card.Text>
                 </Card.Text>
                 <Button variant="primary" style={{margin:'5px'}} onClick={applyData}>Apply</Button>
-                <a href={dt.link} target='_blank'><Button style={{margin:'5px'}}>View Details</Button></a>
+                <a href={dt.link} target='_blank' rel="noopener noreferrer"><Button style={{margin:'5px'}}>View Details</Button></a>
                 </Card.Body>
                 </Card>
             ))}
