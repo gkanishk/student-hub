@@ -68,7 +68,13 @@ function SignUp(){
                 </Form.Group>
                 <Form.Group controlId="formBasicCollege" >
                     <Form.Label style={{textAlign:'left',width:'100%'}}>College</Form.Label>
-                    <Form.Control type="text" placeholder="Enter College" onChange={e=>setCollege(e.target.value)} />
+                    <Form.Control type="text" placeholder="Enter College or Choose from list" list='colle' name='colle' onChange={e=>setCollege(e.target.value)} />
+                    <datalist id="colle">
+                    <option>IIT Delhi</option>
+                    <option>BIT</option>
+                    <option>VIT</option>
+                    <option>Chandigarh University</option>
+                    </datalist>
                 </Form.Group>
                 <Form.Group controlId="formBasicCity" >
                     <Form.Label style={{textAlign:'left',width:'100%'}}>City</Form.Label>
