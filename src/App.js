@@ -44,7 +44,7 @@ function App() {
             <Profile/>
           </Route>
         </Switch>
-        {/* {user?<Redirect to='/home'/>:<Redirect to='/'/>} */}
+        {user?<Redirect to='/home'/>:<Redirect to='/'/>}
     </div>
     </Router>
   );
