@@ -4,6 +4,7 @@ import Login from './Components/Login'
 import Feeds from './Components/Feeds'
 import SignUp from './Components/SignUp'
 import Profile from './Components/Profile'
+import Admin from './Components/Admin'
 import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom';
 import NavigationBar from './Components/NavigationBar'
 import {auth} from './firebase'
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path='/Profile'>
             <Profile/>
+          </Route>
+          <Route path='/Admin'>
+            <Admin/>
           </Route>
         </Switch>
         {user?<Redirect to='/home'/>:<Redirect to='/'/>}

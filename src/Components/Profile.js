@@ -4,7 +4,7 @@ import {Card,ListGroup} from 'react-bootstrap'
 
 function Profile() {
     const [user,setUser]=useState(null);
-    const [data,setData]=useState({city:'',college:'',country:'',dob:'',email:'',marks:'',name:'',passingyear:'',phone:''});
+    const [data,setData]=useState({city:'',college:'',country:'',dob:'',email:'',marks:'',name:'',passingyear:'',phone:'',permission:''});
     useEffect(()=>{
         setUser(localStorage.getItem('User'))
     },[])

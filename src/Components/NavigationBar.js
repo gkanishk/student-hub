@@ -46,6 +46,9 @@ function NavigationBar() {
                     <Nav.Link><Link to='/Profile'>Profile</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
+                    <Nav.Link><Link to='/Admin'>Add Posts</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
                     <Nav.Link onClick={logoutUser} color="#2770BE">Logout</Nav.Link>
                     </Nav.Item>
                     </Nav>

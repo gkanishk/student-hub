@@ -31,6 +31,7 @@ function SignUp(){
                     country:Country,
                     passingyear:Pyear,
                     marks:marks,
+                    permission:'no',
                 })
             }).catch((err)=>{
                 if(err.code==='auth/invalid-email')
